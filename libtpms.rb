@@ -9,6 +9,11 @@ class Libtpms < Formula
   license :cannot_represent
 
   # depends_on "cmake" => :build
+  depends_on "pkg-config" => :build
+  depends_on "autoconf" => :build
+  depends_on "automake" => :build
+  depends_on "libtool" => :build
+  depends_on "openssl@3"
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
