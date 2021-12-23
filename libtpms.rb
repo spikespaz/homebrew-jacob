@@ -25,6 +25,11 @@ class Libtpms < Formula
     system "./autogen.sh", "--prefix=#{prefix}", "--with-openssl", "--with-tpm2"
     system "make"
     system "make install"
+
+    # prefix.install "README"
+    # prefix.install "LICENSE"
+    # prefix.install "CHANGES"
+    prefix.install "CREDITS"
   end
 
   test do
