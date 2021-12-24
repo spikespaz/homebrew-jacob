@@ -25,6 +25,6 @@ class Swtpm < Formula
   end
 
   test do
-    system "false"
+    assert_equal shell_output("#{bin}/swtpm --version").strip, "TPM emulator version 0.7.0, Copyright (c) 2014-2021 IBM Corp."
   end
 end
