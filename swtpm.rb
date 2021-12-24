@@ -16,6 +16,11 @@ class Swtpm < Formula
   depends_on "json-glib" => :build
   depends_on "discoteq/discoteq/flock" => :build
   depends_on "spikespaz/jacob/libtpms"
+  depends_on "openssl@1.1"
+  # depends_on "openssl@3"
+  depends_on "libtasn1"
+  depends_on "gnutls"
+  depends_on "glib"
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
