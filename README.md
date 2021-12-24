@@ -1,13 +1,13 @@
 # Jacob's Homebrew Tap
 
-A personal Homebrew tap for packages that I have needed.
+A personal Homebrew tap for packages that I have needed. These are only tested on macOS Monterey.
 
 Get [Homebrew](https://brew.sh) and tap this repository.
 
-```
-$ brew tap spikespaz/jacob
+```console
+foo@bar:~$ brew tap spikespaz/jacob
 ...
-$ brew install <formula|cask>
+foo@bar:~$ brew install <formula|cask>
 ...
 ```
 
