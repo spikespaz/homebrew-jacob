@@ -1,9 +1,9 @@
 class Swtpm < Formula
   desc "Libtpms-based TPM emulator with socket, character device, and Linux CUSE interface."
-  homepage ""
+  homepage "https://github.com/stefanberger/swtpm"
   url "https://github.com/stefanberger/swtpm/archive/refs/tags/v0.7.0.tar.gz"
   sha256 "bed41871ad42ec852c450f5764be36b6c16456b943b912351eca9c29ce382976"
-  license "NOASSERTION"
+  license :cannot_represent
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
