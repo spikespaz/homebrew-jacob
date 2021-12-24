@@ -9,6 +9,14 @@ class Swtpm < Formula
   license "NOASSERTION"
 
   # depends_on "cmake" => :build
+  depends_on "autoconf" => :build
+  depends_on "automake" => :build
+  depends_on "socat"
+  depends_on "gawk"
+  depends_on "gnutls"
+  depends_on "json-glib"
+  depends_on "discoteq/discoteq/flock"
+  depends_on "spikespaz/jacob/libtpms"
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
